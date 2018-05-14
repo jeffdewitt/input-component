@@ -1,0 +1,46 @@
+.inputComponent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.inputContainer {
+  position: relative;
+  width: 65%;
+}
+
+.inputContainer input {
+  width: 100%;
+}
+
+.inputContainer input:focus + ul {
+  display: block
+}
+
+.inputComponent label {
+  width: 35%
+}
+
+.inputContainer ul {
+  display: none;
+  position: absolute;
+  top: 21px;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-height: 200px;
+  overflow: auto;
+  width: 100%;
+  border: solid 1px black;
+  border-width: 0 1px 1px;
+}
+
+.inputContainer ul li {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.inputList li:hover {
+  background: lightblue;
+}
